@@ -1,0 +1,376 @@
+{
+  "editor.formatOnSave": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.camelCaseMotion.enable": true,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.shellIntegration.history": 10000,
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "Esc"
+      ]
+    }
+  ],
+  "vim.replaceWithRegister": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "s"
+      ],
+      "commands": [
+        "extension.jumpt"
+      ]
+    },
+    {
+      "before": [
+        "<C-j>"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "<C-k>"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "<tab>"
+      ],
+      "commands": [
+        "whichkey.show"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "a"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "s"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "s"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "x"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "F"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "p"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ],
+      "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+      "before": [
+        "g",
+        "y"
+      ],
+      "commands": [
+        "editor.action.marker.next",
+      ],
+      "when": "editorFocus"
+    },
+    {
+      // Pressing the leader key (Spacebar) followed by w splits the editor.
+      "before": [
+        "<leader>",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.splitEditor"
+      ]
+    },
+    {
+      // Pressing the leader key (Spacebar) followed by e toggles the sidebar visibility.
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "names": [
+        "Sidebar Visibility..."
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "find-it-faster.findWithinFiles"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "u"
+      ],
+      "commands": [
+        "find-it-faster.findFiles"
+      ]
+    },
+    {
+      // Pressing the leader key (Spacebar) followed by r and then e renames the current symbol.
+      "before": [
+        "<leader>",
+        "r",
+        "e"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<ESC>"
+      ],
+      "commands": [
+        "editor.debug.action.closeExceptionWidget"
+      ]
+    },
+    {
+      // Pressing the leader key (Spacebar) followed by r and then f renames the current file.
+      "before": [
+        "<leader>",
+        "r",
+        "f"
+      ],
+      "commands": [
+        "fileutils.renameFile"
+      ]
+    },
+    {
+      // Pressing the leader key (Spacebar) followed by o, g shows all symbols in the workspace.
+      "before": [
+        "<leader>",
+        "g",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.showAllSymbols"
+      ]
+    },
+    {
+      // Pressing the leader key (Spacebar) followed by o, o shows all open editors in the active group.
+      "before": [
+        "<leader>",
+        "o",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.showEditorsInActiveGroup"
+      ]
+    },
+    {
+      // Pressing the leader key (Spacebar) followed by o, p opens the quick open panel.
+      "before": [
+        "leader",
+        "o",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      // Pressing the leader key (Spacebar) followed by g, y opens the  quick fix.
+      "before": [
+        "<leader>",
+        "g",
+        "y"
+      ],
+      "commands": [
+        "editor.action.quickFix"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "g",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.gotoSymbol"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "u"
+      ],
+      "commands": [
+        "references-view.findReferences"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "o",
+        "f"
+      ],
+      "commands": [
+        "git.openFile"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "g"
+      ],
+      "commands": [
+        "magit.status"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<Esc>"
+      ],
+      "commands": [
+        "editor.closeTestPeek"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<leader>",
+        "p"
+      ],
+      "commands": [
+        "testing.openOutputPeek"
+      ]
+    }
+  ],
+  "window.zoomLevel": 1,
+  "workbench.iconTheme": "Monokai Classic Icons",
+  "python.languageServer": "Default",
+  "python.analysis.userFileIndexingLimit": -1,
+  "workbench.colorTheme": "Monokai Classic",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "html.format.indentInnerHtml": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "python.testing.pytestArgs": [
+    "--no-cov"
+  ],
+  // "vim.normalModeKeyBindings": [
+  //   {
+  //     "before": ["<leader>", "j", "w"],
+  //   }
+  // ]
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "o",
+        "r"
+      ],
+      "commands": [
+        "testing.runAtCursor"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<tab>"
+      ],
+      "commands": [
+        "whichkey.show"
+      ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+  ],
+  // install multi-command plugin to be able to use it with keybindings
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.toggleMaximizedPanelAndFocusTerminal",
+      "sequence": [
+        "workbench.action.toggleMaximizedPanel",
+        "workbench.action.terminal.focus"
+      ]
+    }
+  ],
+  "whichKeyConfigGen.NormalModeNonRecursiveKeybindings": [],
+  "whichKeyConfigGen.VisualModeNonRecursiveKeybindings": [],
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.enabled": false,
+  "scm.defaultViewMode": "tree",
+  "python.envFile": "/Users/rizas/airbase/airbase-backend/.env.ci",
+  "terminal.external.osxExec": "/Applications/iTerm.app",
+  "git.confirmSync": false,
+  "workbench.fontAliasing": "auto",
+  "editor.fontSize": 13,
+  "whichKeyConfigGen.normalModeNonRecursiveKeybindings": [],
+  "whichKeyConfigGen.visualModeNonRecursiveKeybindings": [],
+  "files.autoSave": "afterDelay",
+  "debugpy.showPythonInlineValues": true,
+  "githubPullRequests.terminalLinksHandler": "github",
+  "githubPullRequests.pullBranch": "never",
+}
